@@ -1,0 +1,127 @@
+html{
+    font-size:62.5%;
+}
+body{
+    background:url(../images/background.jpg)center center no-repeat;
+    background-attachment:fixed;
+    padding:50px;
+}
+
+.search-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-container .title{
+    font-size:5rem;
+    text-decoration: underline;
+    text-transform:uppercase;
+    margin-bottom:2rem;
+    color:#ffffff;
+}
+
+.search-container input.search{
+    width:50rem;
+    height:4.5rem;
+    border-radius:1.5rem;
+    margin-bottom:2rem;
+    padding:0.5rem;
+    font-size:2rem;
+    margin-bottom: 70px;
+}
+
+main.main-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "acoustic-guitar black-strings-guitar guitar"
+                         "programming-java programming-react programming-angular"
+                         "foreing-languages-english foreing-languages-spanish foreing-languages-german"
+                         "sports-running sports-climbing sports-soccer" ;
+   gap:45px;
+   max-width:1300px;
+   place-items: center;
+}
+
+main.main-container .configurations{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:300px;
+    background-color: var(--backgorund-color);
+    border-radius: 1rem;
+    width:350px;
+    padding:15px;
+}
+
+main.main-container h2{
+     font-size:2rem;
+     text-align: center;
+     text-transform: uppercase;
+     margin-top:1rem;
+     color:var(--color-title);
+}
+
+main.main-container img.images{
+     width:100%;
+     height:90%;
+     border-radius: 1rem;
+     transition:0.6s ease-in-out;
+     box-shadow:5px 5px 10px #ffffff;
+     object-fit: cover;
+}
+
+main.main-container img:hover{
+    transform:scale(1.2);
+    cursor:pointer;
+    filter:grayscale(100%);
+}
+
+.acoustic-guitar{
+    grid-area:acoustic-guitar;
+}
+
+.black-strings-guitar{
+    grid-area:black-strings-guitar;
+}
+
+.guitar{
+    grid-area: guitar;
+}
+
+.programming-java{
+    grid-area:programming-java;
+}
+.programming-react{
+    grid-area: programming-react;
+}
+
+.programming-angular{
+    grid-area:programming-angular;
+}
+
+.foreing-languages-english{
+    grid-area:foreing-languages-english;
+}
+
+.foreing-languages-spanish{
+    grid-area: foreing-languages-spanish;
+}
+
+.foreing-languages-german{
+    grid-area:foreing-languages-german;
+}
+
+.sports-running{
+    grid-area:sports-running;
+}
+
+.sports-climbing{
+    grid-area:sports-climbing;
+}
+
+.sports-soccer{
+    grid-area: sports-soccer;
+}
